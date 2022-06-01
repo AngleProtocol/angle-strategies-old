@@ -1,14 +1,20 @@
-# strategies
+# angle-strategies
 
-Yield aggregator repository - Angle implements strategies provide the best yields on ETH mainnet to LP
+Angle Strategies Repository.
 
-Strategies implemented on Angle Protocol
+Like yield aggregators, Angle implements yield strategies to provide the best yields to its LPs, and to get revenue for veANGLE holders. This repo contains the strategies implemented on the Angle Protocol.
 
 ## Documentation
 
 Documentation to understand Angle Protocol's strategies is available [here](https://docs.angle.money/angle-core-module/lending).
 
 Developers documentation to understand the smart contract architecture is available [here](https://developers.angle.money/core-module-contracts/smart-contracts-docs/adapters).
+
+## audit
+
+Angle smart contracts have been audited by [Chainsecurity](https://docs.angle.money/resources/audits#chainsecurity-july-october-2021) and [Sigma Prime](https://docs.angle.money/resources/audits#sigma-prime-july-october-2021). The audit reports can be found in this page of our docs.
+
+Some strategies in this repo have not been audited, but were forked from other protocols like Yearn.
 
 ## Setup
 
