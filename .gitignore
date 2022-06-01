@@ -1,0 +1,36 @@
+## Defaults
+__pycache__
+.idea
+.DS_Store
+.deps
+.vscode
+.docs
+.env
+node_modules
+settings.json
+.mocharc.json
+venv
+
+# Build output
+cache
+build
+export
+**/artifacts
+.openzeppelin
+typechain
+
+
+# Test output
+coverage
+coverage.json
+
+# Running output
+gas-report.txt
+gasReporterOutput.json
+
+# deployments
+deployments/*
+!deployments/kovan
+!deployments/rinkeby
+!deployments/mainnet
+!deployments/polygon
