@@ -43,7 +43,11 @@ async function main() {
     OptimizerAPRStrategy__factory.createInterface(),
     deployer,
   ) as OptimizerAPRStrategy;
-  const poolManager = new ethers.Contract(poolManagerAddress, PoolManager_Interface, deployer) as PoolManager;
+  const poolManager = new ethers.Contract(
+    poolManagerAddress,
+    PoolManager_Interface,
+    deployer,
+  ) as unknown as PoolManager;
 
   await network.provider.send('hardhat_setBalance', [deployer.address, parseUnits('1000000', 18).toHexString()]);
 
