@@ -9,7 +9,6 @@ import {
   GenericAaveFraxConvexStaker__factory,
   IMockFraxUnifiedFarm,
   IMockFraxUnifiedFarm__factory,
-  IPoolRegistryFrax,
   IStakedAave,
   IStakedAave__factory,
   MockToken,

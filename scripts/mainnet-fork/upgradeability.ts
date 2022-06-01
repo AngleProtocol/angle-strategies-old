@@ -3,6 +3,7 @@ import { artifacts } from 'hardhat';
 
 const testUpgradeability = async (name: string, file: string) => {
   const buildInfo = await artifacts.getBuildInfo(`${file}:${name}`);
+  // eslint-disable-next-line
   const baseContract = new UpgradeableContract(name, buildInfo?.input as any, buildInfo?.output as any);
   console.log(name);
   console.log(baseContract.getErrorReport().explain());
@@ -11,12 +12,15 @@ const testUpgradeability = async (name: string, file: string) => {
 
 const testStorage = async (name: string, file: string, nameUpgrade: string, fileUpgrade: string) => {
   const buildInfo = await artifacts.getBuildInfo(`${file}:${name}`);
+  // eslint-disable-next-line
   const baseContract = new UpgradeableContract(name, buildInfo?.input as any, buildInfo?.output as any);
 
   const upgradeBuildInfo = await artifacts.getBuildInfo(`${fileUpgrade}:${nameUpgrade}`);
   const upgradeContract = new UpgradeableContract(
     nameUpgrade,
+    // eslint-disable-next-line
     upgradeBuildInfo?.input as any,
+    // eslint-disable-next-line
     upgradeBuildInfo?.output as any,
   );
   console.log('Upgrade Testing');
