@@ -10,6 +10,7 @@ node_modules
 settings.json
 .mocharc.json
 venv
+slither.db.json
 
 # Build output
 cache

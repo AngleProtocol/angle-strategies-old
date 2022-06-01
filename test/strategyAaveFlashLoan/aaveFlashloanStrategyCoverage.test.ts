@@ -1,6 +1,6 @@
 import { SignerWithAddress } from '@nomiclabs/hardhat-ethers/signers';
 import { ethers, network } from 'hardhat';
-import { utils, Contract, providers } from 'ethers';
+import { utils, Contract } from 'ethers';
 import { expect } from '../test-utils/chai-setup';
 import { deploy, impersonate, latestTime } from '../test-utils';
 import {
