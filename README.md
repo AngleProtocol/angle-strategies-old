@@ -1,4 +1,8 @@
-# angle-strategies
+# <img src="logo.svg" alt="Angle Strategies" height="40px"> Angle Strategies
+
+[![CI](https://github.com/AngleProtocol/angle-strategies/workflows/CI/badge.svg)](https://github.com/AngleProtocol/angle-strategies/actions?query=workflow%3ACI)
+[![Docs](https://img.shields.io/badge/docs-%F0%9F%93%84-blue)](https://docs.angle.money/angle-core-module/lending)
+[![Developers](https://img.shields.io/badge/developers-%F0%9F%93%84-pink)](https://developers.angle.money/core-module-contracts/smart-contracts-docs/strategies)
 
 Like yield aggregators, Angle implements yield strategies to provide the best yields to its LPs, and to get revenue for veANGLE holders. This repo contains the strategies implemented on the Angle Protocol.
 
@@ -101,3 +105,14 @@ We will promise the following:
 - If you so wish we will keep you informed of the progress towards resolving the problem;
 - In the public information concerning the problem reported, we will give your name as the discoverer of the problem (unless you desire otherwise); and
 - As a token of our gratitude for your assistance, we offer a reward for every report of a security problem that was not yet known to us. The amount of the reward will be determined based on the severity of the leak, the quality of the report and any additional assistance you provide.
+
+## Further Information
+
+For a broader overview of the protocol and its different modules, you can also check [this overview page](https://developers.angle.money) of our developers documentation.
+
+Other Angle-related smart contracts can be found in the following repositories:
+
+- [Angle Borrowing module contracts](https://github.com/AngleProtocol/angle-borrow)
+- [Angle Core module contracts](https://github.com/AngleProtocol/angle-core)
+
+Otherwise, for more info about the protocol, check out [this portal](https://linktr.ee/angleprotocol) of resources.
