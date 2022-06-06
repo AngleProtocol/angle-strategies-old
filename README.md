@@ -4,13 +4,38 @@
 [![Docs](https://img.shields.io/badge/docs-%F0%9F%93%84-blue)](https://docs.angle.money/angle-core-module/lending)
 [![Developers](https://img.shields.io/badge/developers-%F0%9F%93%84-pink)](https://developers.angle.money/core-module-contracts/smart-contracts-docs/strategies)
 
-Like yield aggregators, Angle implements yield strategies to provide the best yields to its LPs, and to get revenue for veANGLE holders. This repo contains the strategies implemented on the Angle Protocol.
-
 ## Documentation
+
+### To Start With
+
+Like yield aggregators, Angle implements yield strategies to provide the best yields to its LPs, and to get revenue for veANGLE holders. This repo contains the strategies implemented on the Angle Protocol.
 
 Documentation to understand Angle Protocol's strategies is available [here](https://docs.angle.money/angle-core-module/lending).
 
 Developers documentation to understand the smart contract architecture is available [here](https://developers.angle.money/core-module-contracts/smart-contracts-docs/adapters).
+
+### Further Information
+
+For a broader overview of the protocol and its different modules, you can also check [this overview page](https://developers.angle.money) of our developers documentation.
+
+Other Angle-related smart contracts can be found in the following repositories:
+
+- [Angle Borrowing module contracts](https://github.com/AngleProtocol/angle-borrow)
+- [Angle Core module contracts](https://github.com/AngleProtocol/angle-core)
+
+Otherwise, for more info about the protocol, check out [this portal](https://linktr.ee/angleprotocol) of resources.
+
+## Remarks
+
+### Cross-module Contracts
+
+Some smart contracts of the protocol are used across the different modules of Angle (like the `agToken` contract) and you'll sometimes see different versions across the different repositories of the protocol.
+
+Here are some cross-module contracts and the repos in which you should look for their correct and latest version:
+
+- [`angle-core`](https://github.com/AngleProtocol/angle-core): All DAO-related contracts (`ANGLE`, `veANGLE`, gauges, surplus distribution, ...), `AngleRouter` contract
+- [`angle-borrow`](https://github.com/AngleProtocol/angle-borrow): `agToken` contract
+- [`angle-strategies`](https://github.com/AngleProtocol/angle-strategies): Yield strategies of the protocol
 
 ## Setup
 
@@ -79,7 +104,9 @@ If you have issues running tests or scripts, you can delete `node_modules`, `cac
 
 ## Audits
 
-Angle smart contracts have been audited by [Chainsecurity](https://docs.angle.money/resources/audits#chainsecurity-july-october-2021) and [Sigma Prime](https://docs.angle.money/resources/audits#sigma-prime-july-october-2021). The audit reports can be found in this page of our docs.
+Angle smart contracts have been audited by [Chainsecurity](https://docs.angle.money/resources/audits#chainsecurity-july-october-2021) and [Sigma Prime](https://docs.angle.money/resources/audits#sigma-prime-july-october-2021).
+
+All Angle Protocol related audits can be found in [this page](https://docs.angle.money/resources/audits) of our docs.
 
 Some strategies in this repo have not been audited, but were forked from other protocols like Yearn.
 
@@ -103,14 +130,3 @@ For more details, please refer to the [official page of the bounty on Immunefi](
 | Medium   | USD \$2,500         |
 
 All bug reports must include a Proof of Concept demonstrating how the vulnerability can be exploited to be eligible for a reward. This may be a smart contract itself or a transaction.
-
-## Further Information
-
-For a broader overview of the protocol and its different modules, you can also check [this overview page](https://developers.angle.money) of our developers documentation.
-
-Other Angle-related smart contracts can be found in the following repositories:
-
-- [Angle Borrowing module contracts](https://github.com/AngleProtocol/angle-borrow)
-- [Angle Core module contracts](https://github.com/AngleProtocol/angle-core)
-
-Otherwise, for more info about the protocol, check out [this portal](https://linktr.ee/angleprotocol) of resources.
